@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=EDGE">
+    <link rel="SHORTCUT ICON" 
+      href="/static/favicon.ico">
+    <script src="/static/js/socket.io.js">
+    </script>
+
+    <script type="text/javascript">
+      function init() {
+      socket = new io.Socket(location.hostname, {port:12421});
+      socket.on('message', function(data){
+         console.log(data);
+      });
+
+      socket.on('connect', function(){
+         console.log("Imma connectad!");
+         console.log(socket);
+         socket.send({msga: "Erlang rulez!", msgb:"msgb"});
+
+      });
+      socket.connect();
+      }
+    </script>
+  </head>
+
+  <body onLoad="init()">
+
+  </body>
+</html>

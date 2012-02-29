@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Micila-0.2.0</title>
+    <link type="text/css" href="/static/css/start/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/static/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript"
+    src="/static/js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+    
+    <style type="text/css">
+      fieldset { padding:0; border:0; margin-top:25px; }
+      input.text { margin-bottom:12px; width:95%; padding: .4em; }
+      label, input { display:block;}
+      div#tabs-2 { width: 300px; margin: 0 0; }
+      div#tabs-2 table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+      div#tabs-2 table td, div#tabs-2 table th { border:1px solid #eee; padding: .6em 10px; text-align: left; }
+      
+      /*demo page css*/
+      body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+      .demoHeaders { margin-top: 2em; }
+      #dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+      #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+      ul#icons {margin: 0; padding: 0;}
+      ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+      ul#icons span.ui-icon {float: left; margin: 0 4px;}
+
+    </style>	
+  </head>
+  <body>
+    <h1>Welcome to Micila!</h1>
+    <p style="font-size: 1.3em; line-height: 1.5; margin: 1em 0;
+	      width: 50%;"> Micila is a web app that make your opinions      heard by others. <br/>
+    </p>
+    <p style="font-size: 1.3em; line-height: 1.5; margin: 1em 0;
+	      width: 50%;">
+      Also, you can make friends that have the same opinions of you.
+    </p>
+    
+    <button id="join">Join the flock!</button>
+
+    <div id="dialog-form" title="Select your channel">
+	<p class="validateTips">All form fields are required.</p>
+	<form action='chat' method='post' id='chat_form'>		
+	<fieldset>
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email" value=""
+		class="text ui-widget-content ui-corner-all" /></br>
+		<div id="tabs">
+		  <ul>
+		    <li><a href="#tabs-1">Custom</a></li>
+		    <li><a href="#tabs-2">Hot topics</a></li>
+		    <li><a href="#tabs-3">Trends from Twitter</a></li>
+		  </ul>
+		  <div id="tabs-1">
+		    <label for="channel">Channel</label>
+		    <input type="text" name="channel" id="channel"
+			   class="text ui-widget-content
+		    ui-corner-all" value="any" /></br>
+		    <submit id="join-channel">Join</button>
+		  </div>
+		  <div id="tabs-2">
+		    <table id="users" class="ui-widget ui-widget-content">
+		      <thead>
+			<tr class="ui-widget-header ">
+			  <th>Topic</th>
+			  <th>Active</th>
+			</tr>
+		      </thead>
+		      <tbody>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>
+			<tr>
+			  <td>FemalesOutHereShapedLike</td>
+			  <td>1</td>
+			</tr>			
+		      </tbody>
+		    </table>
+		  </div>
+		  <div id="tabs-3">
+		  </div>
+		</div>
+	</fieldset>
+	</form>
+</div>
+  </body>
+</html>
+
+

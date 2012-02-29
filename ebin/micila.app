@@ -1,0 +1,11 @@
+{application,micila,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{micila_app,[]}},
+              {env,[]},
+              {modules,[gmail,imagine,imagine_app,imagine_sup,micila,
+                        micila_app,micila_sup,misultin_http,remote,room,
+                        roomManager,socketio_waiter,tcpgateway,utility_server,
+                        waiter_tcp,web_server]}]}.
